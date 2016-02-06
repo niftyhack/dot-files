@@ -1,2 +1,2 @@
 # dot-files
-.dot files
+My .dot files.

@@ -75,8 +75,8 @@ set nocompatible
 set noerrorbells
 set visualbell
 
-" Don't wrap long lines.
-set nowrap
+" Wrap long lines.
+set wrap
 
 " Enable line numbering.
 set number

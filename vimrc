@@ -142,3 +142,7 @@ set wildmode=list:longest,full
 
 " Enable syntax highlighting.
 syntax on
+
+" Redefine color of selected code in visual mode.
+hi Visual term=reverse cterm=reverse guibg=Grey
+

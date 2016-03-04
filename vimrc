@@ -28,11 +28,14 @@ set cmdheight=2
 " Highlight current line.
 set cursorline
 
+" Default encoding.
+set encoding=utf-8
+
+" Default file encoding.
+set fileencoding=utf-8
+
 " Default filetype.
 set fileformats=unix
-
-" Default encoding.
-set encoding=utf8
 
 " Use spaces instead of tabs.
 set expandtab

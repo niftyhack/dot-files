@@ -64,9 +64,6 @@ set matchtime=5
 " Enable modelines.
 set modeline
 
-" Enable the use of a mouse.
-set mouse=a
-
 " Turn off backup files.
 set nobackup
 set noswapfile

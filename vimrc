@@ -152,6 +152,6 @@ hi Visual term=reverse cterm=reverse guibg=Grey
 " Change some settings based on the hostname.
 let my_hostname = substitute(system('hostname'), '\n', '', '')
 if (my_hostname == 'krabappel' || my_hostname == 'jango' || my_hostname == 'luke')
-   autocmd Filetype php set softtabstop=5 shiftwidth=5
+   autocmd Filetype php set softtabstop=3 shiftwidth=3
 endif
 

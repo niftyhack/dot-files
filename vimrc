@@ -128,6 +128,9 @@ set statusline+=%c,     " Cursor column.
 set statusline+=%l/%L	" Cursor line/total lines.
 set statusline+=\ %P	" Percent through file.
 
+" Default tabstop.
+set tabstop=4
+
 " Set title of window.
 set title
 
@@ -149,6 +152,6 @@ hi Visual term=reverse cterm=reverse guibg=Grey
 " Change some settings based on the hostname.
 let my_hostname = substitute(system('hostname'), '\n', '', '')
 if (my_hostname == 'krabappel' || my_hostname == 'jango' || my_hostname == 'luke' || my_hostname == 'grimey')
-   autocmd Filetype php set softtabstop=3 shiftwidth=3
+   autocmd Filetype php set softtabstop=3 shiftwidth=3 tabstop=3
 endif
 

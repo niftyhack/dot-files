@@ -78,6 +78,9 @@ set visualbell
 " Wrap long lines.
 set wrap
 
+" Leave the cursor where it is.
+set nostartofline
+
 " Enable line numbering.
 set number
 

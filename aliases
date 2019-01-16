@@ -1,0 +1,7 @@
+function cheat() {
+    curl cht.sh/$1
+}
+
+alias grep='grep --color=auto'
+alias ls='ls --color=auto --human-readable --group-directories-first --classify'
+alias recentlychanged="find . -type f -print0 | xargs -0 stat --format '%Z :%z %n' | sort -nr | cut -d: -f2- | head -n 20"

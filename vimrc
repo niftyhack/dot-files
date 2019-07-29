@@ -152,3 +152,13 @@ syntax on
 " Redefine color of selected code in visual mode.
 hi Visual term=reverse cterm=reverse guibg=Grey
 
+" GUI settings
+if has("gui_running")
+    "set guioptions-=m  "remove menu bar
+    set guioptions-=T  "remove toolbar
+    colorscheme industry
+    set lines=50 columns=120
+    if has("gui_macvim")
+        set guifont=Menlo:h13
+    endif
+endif

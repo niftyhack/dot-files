@@ -160,5 +160,6 @@ if has("gui_running")
     set lines=50 columns=120
     if has("gui_macvim")
         set guifont=Menlo:h13
+        autocmd VimLeave * :!open -a Terminal
     endif
 endif

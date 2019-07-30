@@ -119,17 +119,31 @@ set smartcase
 set softtabstop=4
 
 " Status line definition.
-set statusline=%t	" Tail of the filename.
-set statusline+=[%{strlen(&fenc)?&fenc:'none'},	" File encoding.
-set statusline+=%{&ff}] " File format.
-set statusline+=%h      " Help file flag.
-set statusline+=%m      " Modified flag.
-set statusline+=%r      " Read only flag.
-set statusline+=%y      " Filetype.
-set statusline+=%=      " Left/right separator.
-set statusline+=%c,     " Cursor column.
-set statusline+=%l/%L	" Cursor line/total lines.
-set statusline+=\ %P	" Percent through file.
+
+function! GitBranch()
+  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+endfunction
+
+function! StatuslineGit()
+  let l:branchname = GitBranch()
+  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+endfunction
+
+set statusline=
+set statusline+=%#MatchParen#
+set statusline+=%{StatuslineGit()}
+set statusline+=%#CursorColumn#
+set statusline+=\ %F
+set statusline+=%m
+set statusline+=\ %r
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %y
+set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+set statusline+=\[%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\
 
 " Default tabstop.
 set tabstop=4

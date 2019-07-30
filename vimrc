@@ -143,7 +143,7 @@ set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
 set statusline+=\[%{&fileformat}\]
 set statusline+=\ %p%%
 set statusline+=\ %l:%c
-set statusline+=\
+set statusline+=\ 
 
 " Default tabstop.
 set tabstop=4

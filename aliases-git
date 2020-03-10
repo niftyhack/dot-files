@@ -1,7 +1,14 @@
 alias gacp='git add . && git commit -m `date "+%Y-%m-%d"` && git push'
+alias gco='git checkout'
+alias gcob='git checkout -b'
 alias gia='git add'
 alias gic="git commit"
+alias gid='git diff'
 alias gil='git log'
 alias gilp='git log -p'
 alias gip='git push'
+alias gipl='git pull'
 alias gis='git status'
+alias giss='git status -sb'
+alias gisb='git status -sb'
+alias glpv="git log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"

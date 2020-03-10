@@ -32,7 +32,6 @@
   acp = !git add --all && git commit -m `date "+%Y-%m-%d"` && git push
 
   # Push and Pull
-  pu = push
   pl = pull
 
   # Status

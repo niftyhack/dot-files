@@ -2,6 +2,5 @@ function cheat() {
     curl cht.sh/$1
 }
 
-alias gacp='git add . && git commit -m `date "+%Y-%m-%d"` && git push'
 alias k='kubectl'
 alias phpstorm='pstorm'

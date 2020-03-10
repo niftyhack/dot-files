@@ -1,0 +1,6 @@
+alias gacp='git add . && git commit -m `date "+%Y-%m-%d"` && git push'
+alias gia='git add'
+alias gic="git commit"
+alias gil='git log'
+alias gilp='git log -p'
+alias gis='git status'

@@ -18,6 +18,10 @@
   co = checkout
   cob = checkout -b
 
+  # Commit 
+  cm = commit --message
+  cam = commit --all --message
+
   # Log
   lp = log -p
 

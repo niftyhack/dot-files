@@ -1,4 +1,3 @@
-alias gacp='git add . && git commit -m `date "+%Y-%m-%d"` && git push'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 alias gia='git add'

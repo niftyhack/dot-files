@@ -3,4 +3,5 @@ alias gia='git add'
 alias gic="git commit"
 alias gil='git log'
 alias gilp='git log -p'
+alias gip='git push'
 alias gis='git status'

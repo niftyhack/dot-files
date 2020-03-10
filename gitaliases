@@ -24,6 +24,9 @@
 
   # Log
   lp = log -p
+  lo = log --oneline
+  lpr = log --pretty=format:'%C(yellow)%h %Cred%ad %C(bold blue)%an%Cgreen%d %Creset%s' --relative-date
+  lcgp = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 
   # Misc
   acp = !git add --all && git commit -m `date "+%Y-%m-%d"` && git push

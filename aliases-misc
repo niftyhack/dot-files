@@ -3,4 +3,6 @@ function cheat() {
 }
 
 alias k='kubectl'
+alias ll='ls -lh'
+alias lla='ls -lah'
 alias phpstorm='pstorm'

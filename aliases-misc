@@ -3,6 +3,7 @@ function cheat() {
 }
 
 alias k='kubectl'
+complete -F __start_kubectl k
 alias ll='ls -lh'
 alias lla='ls -lah'
 alias phpstorm='pstorm'

@@ -1,11 +1,5 @@
-function cheat() {
-    curl cht.sh/$1
-}
-
 alias k='kubectl'
 complete -F __start_kubectl k
 alias ll='ls -lh'
 alias lla='ls -lah'
-alias phpstorm='pstorm'
 alias watch='watch '
-alias doco='docker-compose'
